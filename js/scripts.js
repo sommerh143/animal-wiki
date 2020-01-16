@@ -1,11 +1,19 @@
 $(function(){
   $("#turtle-btn").click(function(){
     $("#turtle").toggle();
+      $("#snake").hide();
+      $("#insects").hide()
   });
   $("#snake-btn").click(function(){
     $("#snake").toggle();
+    $("#turtle").hide();
+    $("#insects").hide()
   });
   $("#insects-btn").click(function(){
     $("#insects").toggle();
+    $("#turtle").hide();
+    $("#snake").hide()
   });
+
+  event.preventDefault();
 });
