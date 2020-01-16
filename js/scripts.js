@@ -1,0 +1,11 @@
+$(function(){
+  $("#turtle-btn").click(function(){
+    $("#turtle").toggle();
+  });
+  $("#snake-btn").click(function(){
+    $("#snake").toggle();
+  });
+  $("#insects-btn").click(function(){
+    $("#insects").toggle();
+  });
+});
